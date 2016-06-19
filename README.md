@@ -26,7 +26,7 @@ Python script to fetch tweets from twitter lists and send them by email.
     - SMTP_PORT
     - SMTP_USERNAME
     - SMTP_PASSWORD
-  - Scale and at one worker:
+  - Scale your app (add one worker):
   
     ```shell
     heroku scale workers=1
