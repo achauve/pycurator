@@ -1,0 +1,1 @@
+workers: python curator.py
