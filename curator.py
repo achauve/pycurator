@@ -18,7 +18,9 @@ def last_tweet_id_redis_key(list_slug):
 
 
 def load_last_tweet_id(list_slug):
-    return redis_client.get(last_tweet_id_redis_key(list_slug))
+    last_id = redis_client.get(last_tweet_id_redis_key(list_slug))
+    logging.info('loading last_tweet_id for list "%s": %s' % (list_slug, last_id))
+    return last_id
 
 
 def save_last_tweet_id(last_id, list_slug):
