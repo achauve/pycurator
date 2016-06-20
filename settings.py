@@ -29,6 +29,8 @@ class Settings:
     SMTP_HOST = env_var('SMTP_HOST')
     SMTP_PORT = env_var('SMTP_PORT')
 
+    EMAIL_RECIPIENT = env_var('EMAIL_RECIPIENT')
+
     REDIS_URL = env_var('REDIS_URL', 'redis://localhost:6379')
 
     DRY_RUN = env_var('DRY_RUN', True)

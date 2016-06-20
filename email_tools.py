@@ -19,7 +19,7 @@ def smtp_server():
 
 def send_email(s, sender, msg_subject, html_content):
     msg = MIMEMultipart()
-    recipients = [Settings.SMTP_USERNAME]
+    recipients = [Settings.EMAIL_RECIPIENT]
     msg['Subject'] = msg_subject
     msg['From'] = sender
     msg['To'] = ', '.join(recipients)
