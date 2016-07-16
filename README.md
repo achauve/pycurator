@@ -1,7 +1,18 @@
-pycurator
+Pycurator
 =========
 
-Python script to fetch tweets from twitter lists and send them by email.
+Tweet to email curation tool. Send each tweet from your selected [private] Twitter lists as an email.
+
+
+## Why Pycurator?
+
+Twitter is great to keep current with startups and software development news. 
+But existing twitter clients are bad at keeping track of what you’ve already read.
+Email clients are good at that though! Why not mix Twitter and emails?
+
+*Tips*
+- Use a small number of twitter private lists to group accounts you follow by priority. For instance, I use list L1 for tweets I don't want to miss, and then L2 for less important tweets. Of course you can add as many lists as you want.
+- Carefully select which twitter accounts you add in these lists to avoid being overwhelmed. I prefer following accounts that tweet only about a few subjects and are not used as a real-time facebook wall.
 
 
 ## Deploy on heroku
@@ -36,3 +47,6 @@ Python script to fetch tweets from twitter lists and send them by email.
   - and finally if you want to run the script without actually sending you emails but instead just printing eveything to the console (and logentries if you added it as an heroku addon):
     - DRY_RUN=false
   
+## Next
+
+- Add Reddit as a curation source
