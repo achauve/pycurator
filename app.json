@@ -2,5 +2,16 @@
   "name": "Pycurator",
   "description": "Python script to fetch tweets from twitter lists and send them by email.",
   "repository": "https://github.com/achauve/pycurator",
-  "keywords": ["python", "twitter", "email"]
+  "keywords": ["python", "twitter", "email"],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "heroku-redis:hobby-dev",
+    "logentries:le_tryit",
+    "sendgrid:starter"
+  ]
 }
