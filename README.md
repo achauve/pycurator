@@ -6,13 +6,15 @@ Python script to fetch tweets from twitter lists and send them by email.
 
 ## Deploy on heroku
 
-- [Create a new twitter app](https://apps.twitter.com/) and get your credentials. You need your:
+- First [Create a new twitter app](https://apps.twitter.com/) and get your credentials. You need your:
   - Consumer Key
   - Consumer Secret
   - Access Token
   - Access Token Secret
-  
-- [Create a new heroku app](https://dashboard.heroku.com/new):
+
+- Then [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+- Or manually: [Create a new heroku app](https://dashboard.heroku.com/new) and then:
   - You need to add at least the free version of the heroku redis add-on.
   - [Optional] Add the logentries add-on to keep track of your logs.
   - Set the environment variables:
