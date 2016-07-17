@@ -18,8 +18,11 @@ def smtp_server():
 
 
 def send_email(s, sender, msg_subject, html_content):
-    msg = MIMEMultipart()
+    if Settings.EMAIL_RECIPIENT is None:
+        raise Exception('EMAIL_RECIPIENT env variable must be set')
     recipients = [Settings.EMAIL_RECIPIENT]
+
+    msg = MIMEMultipart()
     msg['Subject'] = msg_subject
     msg['From'] = sender
     msg['To'] = ', '.join(recipients)
