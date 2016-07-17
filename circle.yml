@@ -1,0 +1,12 @@
+machine:
+  python:
+    version: 3.5.1
+
+dependencies:
+  override:
+    - pip install -r requirements-tests.txt
+
+test:
+  override:
+    - flake8
+    - mypy --strict-optional --check-untyped-defs --fast-parser --warn-incomplete-stub --warn-redundant-casts --silent-imports pycurator
