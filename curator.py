@@ -125,7 +125,7 @@ def fetch_tweets_and_send_emails():
 
             last_tweet_id = load_last_tweet_id(list_slug)
             if last_tweet_id is None:
-                raise Exception("could not read last_tweet_id for list %s" % list_slug)
+                logging.warning('no last tweet id was found for list %s' % list_slug)
 
             tweets = get_tweets(twitter_api, list_slug=list_slug, last_tweet_id=last_tweet_id)
 
