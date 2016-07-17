@@ -12,7 +12,7 @@ def read_env() -> Dict:
     config = {}
     try:
         this_directory = osp.dirname(osp.realpath(__file__))
-        env_filename = osp.join(this_directory, '.env')
+        env_filename = osp.join(this_directory, '..', '.env')
         with open(env_filename) as env_file:
             for line in env_file:
                 splits = line.strip().split('=')

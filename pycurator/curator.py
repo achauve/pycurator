@@ -3,12 +3,13 @@ import time
 from collections import namedtuple
 from typing import List, Any, Dict
 
+import redis
 import schedule
 import tweepy
-import redis
 
-from settings import Settings
-from email_tools import send_email, smtp_server
+from .settings import Settings
+from .email_tools import send_email, smtp_server
+
 
 LIST_SLUGS = Settings.TWITTER_LIST_SLUGS.split(',')
 
@@ -152,7 +153,3 @@ def main() -> None:
     while True:
         schedule.run_pending()
         time.sleep(1)
-
-
-if __name__ == '__main__':
-    main()

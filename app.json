@@ -1,6 +1,6 @@
 {
   "name": "Pycurator",
-  "description": "Python script to fetch tweets from twitter lists and send them by email.",
+  "description": "Tweet to email curation tool. Send each tweet from your selected [private] Twitter lists as an email.",
   "repository": "https://github.com/achauve/pycurator",
   "keywords": ["python", "twitter", "email"],
   "formation": {

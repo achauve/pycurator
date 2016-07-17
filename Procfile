@@ -1,1 +1,1 @@
-workers: python curator.py
+workers: python pycurator_worker.py

@@ -1,12 +1,11 @@
-from contextlib import contextmanager
 import logging
 import smtplib
-
+from contextlib import contextmanager
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Generator
 
-from settings import Settings
+from .settings import Settings
 
 
 @contextmanager

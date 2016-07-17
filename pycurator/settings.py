@@ -1,9 +1,8 @@
+import os
 from logging.config import dictConfig
 from typing import Optional
 
-import load_env  # noqa
-
-import os
+from . import load_env  # noqa
 
 
 def env_var(key: str, default: str=None) -> Optional[str]:
