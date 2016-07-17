@@ -3,6 +3,7 @@ Pycurator
 
 Tweet to email curation tool. Send each tweet from your selected [private] Twitter lists as an email.
 
+[![CircleCI](https://circleci.com/gh/achauve/pycurator.svg?style=svg)](https://circleci.com/gh/achauve/pycurator)
 
 ## Why Pycurator?
 
