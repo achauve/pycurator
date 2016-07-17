@@ -4,12 +4,13 @@ import smtplib
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from typing import Generator
 
 from settings import Settings
 
 
 @contextmanager
-def smtp_server():
+def smtp_server() -> Generator[smtplib.SMTP, None, None]:
     s = smtplib.SMTP(Settings.SMTP_HOST, Settings.SMTP_PORT)
     s.starttls()
     s.login(Settings.SMTP_USERNAME, Settings.SMTP_PASSWORD)
@@ -17,9 +18,7 @@ def smtp_server():
     s.quit()
 
 
-def send_email(s, sender, msg_subject, html_content):
-    if Settings.EMAIL_RECIPIENT is None:
-        raise Exception('EMAIL_RECIPIENT env variable must be set')
+def send_email(s: smtplib.SMTP, sender: str, msg_subject: str, html_content: str) -> None:
     recipients = [Settings.EMAIL_RECIPIENT]
 
     msg = MIMEMultipart()

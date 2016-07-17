@@ -1,9 +1,10 @@
 import logging
 import os
 import os.path as osp
+from typing import Dict
 
 
-def read_env():
+def read_env() -> Dict:
     """
     Try to load your config stored in '.env' file.
     Useful for customizing dev options.
@@ -11,8 +12,8 @@ def read_env():
     config = {}
     try:
         this_directory = osp.dirname(osp.realpath(__file__))
-        env_file = osp.join(this_directory, '.env')
-        with open(env_file) as env_file:
+        env_filename = osp.join(this_directory, '.env')
+        with open(env_filename) as env_file:
             for line in env_file:
                 splits = line.strip().split('=')
                 config[splits[0]] = '='.join(splits[1:])
