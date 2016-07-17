@@ -1,0 +1,8 @@
+-r requirements.txt
+pep8
+mccabe
+pyflakes
+flake8
+mypy-lang
+typed-ast
+pip-tools
