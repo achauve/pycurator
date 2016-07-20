@@ -5,6 +5,8 @@ Tweet to email curation tool. Send each tweet from your selected [private] Twitt
 
 [![CircleCI](https://circleci.com/gh/achauve/pycurator.svg?style=svg)](https://circleci.com/gh/achauve/pycurator)
 
+You can [![deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) your own instance for free in just a few steps. See below for more information.
+
 ## Why Pycurator?
 
 Twitter is great to keep current with startups and software development news. 
@@ -14,6 +16,11 @@ Email clients are good at that though! Why not mix Twitter and emails?
 *Tips*
 - Use a small number of twitter private lists to group accounts you follow by priority. For instance, I use list L1 for tweets I don't want to miss, and then L2 for less important tweets. Of course you can add as many lists as you want.
 - Carefully select which twitter accounts you add in these lists to avoid being overwhelmed. I prefer following accounts that tweet only about a few subjects and are not used as a real-time facebook wall.
+
+### Screenshots
+
+![first screenshot](https://raw.githubusercontent.com/achauve/pycurator/master/screenshots/screenshot_1.png)
+![second screenshot](https://raw.githubusercontent.com/achauve/pycurator/master/screenshots/screenshot_2.png)
 
 
 ## Deploy on heroku
